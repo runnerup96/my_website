@@ -29,15 +29,11 @@
               {{ page.title }}
             </a>
           </h2>
-          <p class="subtitle">{{ page.description }}</p>
-          <div class="columns is-multiline is-gapless">
-            <div class="column is-8">
-              {{ macros::page_publish_metadata(page=page) }}
-            </div>
-            <div class="column is-4 has-text-right-desktop">
-              {{ macros::page_content_metadata(page=page) }}
-            </div>
-          </div>
+          <p class="subtitle" style="margin-bottom: 0">{{ page.description }}</p>
+          {% if page.extra.link %}
+            <a href='{{page.extra.link}}' > {{ page.extra.link_description }} </a>
+          {% endif %}
+
           <div class="content mt-2">
             {{ page.summary | safe }}
             <a class="has-text-danger-dark has-text-weight-semibold" href='{{ page.permalink }}'>

@@ -2,8 +2,8 @@
 base_url = "https://deepthought-theme.netlify.app"
 
 # The site title and description; used in feeds by default.
-title = "DeepThought"
-description = "A simple blog theme focused on writing powered by Bulma and Zola"
+title = "Vlad Lialin"
+description = "Vlad Lialin personal website"
 
 # The default language; used in feeds.
 default_language = "en"
@@ -29,12 +29,12 @@ minify_html = false
 ignored_content = []
 
 # When set to "true", a feed is automatically generated.
-generate_feed = true
+generate_feed = false
 
 # The filename to use for the feed. Used as the template filename, too.
 # Defaults to "atom.xml", which has a built-in template that renders an Atom 1.0 feed.
 # There is also a built-in template "rss.xml" that renders an RSS 2.0 feed.
-feed_filename = "rss.xml"
+# feed_filename = "rss.xml"
 
 # The number of articles to include in the feed. All items are included if
 # this limit is not set (the default).
@@ -168,11 +168,9 @@ galleria.enabled = true
 
 navbar_items = [
     { code = "en", nav_items = [
-        { url = "$BASE_URL/", name = "Home" },
-        { url = "$BASE_URL/posts", name = "Posts" },
-        { url = "$BASE_URL/docs", name = "Docs" },
-        { url = "$BASE_URL/tags", name = "Tags" },
-        { url = "$BASE_URL/categories", name = "Categories" },
+        { url = "$BASE_URL/", download=false, name = "Home" },
+        { url = "$BASE_URL/publications", download=false, name = "Publications" },
+        { url = "https://storage.googleapis.com/vlialin-share/vladislav_lialin_cv.pdf", download=true, name="CV"},
     ] },
 ]
 
@@ -181,31 +179,16 @@ favicon_16x16 = "/icons/favicon-16x16.png"
 favicon_32x32 = "/icons/favicon-32x32.png"
 apple_touch_icon = "/icons/apple-touch-icon.png"
 safari_pinned_tab = "/icons/safari-pinned-tab.svg"
-webmanifest = "/icons/site.webmanifest"
 
 [extra.author]
 name = "DeepThought"
-avatar = "images/avatar.png"
+avatar = "images/avatar.jpg"
 
 [extra.social]
-facebook = "RatanShreshtha"
-github = "RatanShreshtha"
-gitlab = "ratanshreshtha"
-keybase = "RatanShreshtha"
-linkedin = "ratanshreshtha"
-stackoverflow = "3728911"
-email = "deepthought@gmail.com"
-twitter = "RatanShreshtha"
-mastodon = "@RatanShreshtha"
-#orcid = ""
-#google_scholar = ""
-
-[extra.analytics]
-google = "UA-176984489-2"
-
-[extra.commenting]
-disqus = "deepthought-theme"
-
-[extra.mapbox]
-enabled = true
-access_token = "pk.eyJ1IjoicmF0YW5zaHJlc2h0aGEiLCJhIjoiY2tla2s2NmM3MDd0ZzJzbXFtc3Y2YmU0NyJ9.0RhUnJPKbxHWw3xGPnnBlA"
+github = "guitaricet"
+linkedin = "vlialin"
+email = "vlad.lialin@gmail.com"
+twitter = "guitaricet"
+cv = "https://storage.googleapis.com/vlialin-share/vladislav_lialin_cv.pdf"
+google_scholar = "B1Ijov0AAAAJ"
+telegram = "dlinnlp"

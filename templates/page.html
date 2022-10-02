@@ -9,29 +9,14 @@
   <div class="container">
     <div class="columns">
       <div class="column is-8 is-offset-2">
-        <article class="box">
+        <article>
           <h1 class="title">
             {{ page.title }}
           </h1>
-          <p class="subtitle">{{ page.description }}</p>
-          <div class="columns is-multiline is-gapless">
-            <div class="column is-8">
-              {{ macros::page_publish_metadata(page=page) }}
-            </div>
-            <div class="column is-4 has-text-right-desktop">
-              {{ macros::page_content_metadata(page=page) }}
-            </div>
-            <div class="column">
-              {% if page.taxonomies.categories %}
-              {{ macros::render_categories(categories=page.taxonomies.categories) }}
-              {% endif %}
-            </div>
-            <div class="column has-text-right-desktop">
-              {% if page.taxonomies.tags %}
-              {{ macros::render_tags(tags=page.taxonomies.tags) }}
-              {% endif %}
-            </div>
-          </div>
+          <p class="subtitle" style="margin-bottom: 0">{{ page.description }}</p>
+          {% if page.extra.link %}
+            <a href='{{page.extra.link}}' > {{ page.extra.link_description }} </a>
+          {% endif %}
           <div class="content mt-2">
             {{ page.content | safe }}
           </div>

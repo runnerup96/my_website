@@ -87,20 +87,22 @@
           {% for item in config.extra.navbar_items %}
           {% if lang == item.code %}
           {% for nav in item.nav_items %}
+          {% if nav.download == true %}
+          <!-- Open download links (e.g. CV) in a new tab -->
+          <a class="navbar-item has-text-weight-semibold" href="{{ nav.url | replace(from='$BASE_URL', to=config.base_url) }}" target="_blank" rel="noopener noreferrer">
+            {{ nav.name }}
+          </a>
+          {% else %}
           <a class="navbar-item has-text-weight-semibold" href="{{ nav.url | replace(from='$BASE_URL', to=config.base_url) }}">
             {{ nav.name }}
           </a>
+          {% endif %}
           {% endfor %}
           {% endif %}
           {% endfor %}
           <a class="navbar-item" id="nav-search" title="Search" data-target="#search-modal">
             <span class="icon">
               <i class="fas fa-search"></i>
-            </span>
-          </a>
-          <a class="navbar-item" id="dark-mode" title="Switch to dark theme">
-            <span class="icon">
-              <i class="fas fa-adjust"></i>
             </span>
           </a>
         </div>
@@ -188,10 +190,8 @@
           <span class="icon">
             <i class="fas fa-heart"></i>
           </span>
-          <span>love</span>
+          <span>love.</span>
         </span>
-      </p>
-      <p>
         Powered by
         <span class="icon-text">
           <span class="icon">
