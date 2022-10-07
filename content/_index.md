@@ -8,4 +8,4 @@ At scale, this potentially allows us to model both the world we live in and inte
 I want to understand and expand the intersection between language modeling, vision, reasoning, planning, and interacting with the real world.
 Simple is always better than complex, and I think the convergence of deep learning to Transformers is a good example.
 
-Currently, I am a PhD student at UMass Lowell, advised by Prof. Anna Rumshisky.
+I've interned at Google, Apple, and Amazon Research. Currently, I am a PhD student at UMass Lowell, advised by Prof. Anna Rumshisky. Check out my [publications](https://vladlialin.com/publications/) and [CV](https://storage.googleapis.com/vlialin-share/vladislav_lialin_cv.pdf)
