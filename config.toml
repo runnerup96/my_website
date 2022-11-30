@@ -168,8 +168,8 @@ galleria.enabled = true
 
 navbar_items = [
     { code = "en", nav_items = [
-        { url = "$BASE_URL/", download=false, name = "Home" },
-        { url = "$BASE_URL/publications", download=false, name = "Publications" },
+        { url = "$BASE_URL/", download=false, name = "Главная" },
+        { url = "$BASE_URL/publications", download=false, name = "Публикации" },
         { url = "", download=true, name="CV"},
     ] },
 ]

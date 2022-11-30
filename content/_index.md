@@ -1,6 +1,7 @@
 +++
-title = "Test test"
-description = "test test test"
+title = "Олег Сомов"
+description = "Занимаюсь исследованием способности к обобщению в моделях в tex2query задаче"
 +++
 
-bla bla bla bla blabla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla
+Я аспирант МФТИ, занимаюсь NLP исследованием. Преподаю на физтехе, тим-лид в компании SberDevices. Сфера интересов - семантический парсинг,
+графы знаний, языковые модели.
