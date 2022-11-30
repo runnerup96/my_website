@@ -1,4 +1,4 @@
-+++ 
-title = "Публикации" 
-sort_by = "date" 
++++
+title = "Publications"
+sort_by = "date"
 +++
